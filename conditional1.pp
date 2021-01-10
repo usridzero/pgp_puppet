@@ -1,6 +1,6 @@
-if $ machine == 'production' { 
+if $machine == 'production' { 
    include ssl 
-} elsif $ machine == 'testing' { 
+} elsif $machine == 'testing' { 
    include nginx
 } else { 
 include openssl 
